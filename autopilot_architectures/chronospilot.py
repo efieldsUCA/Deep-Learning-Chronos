@@ -8,7 +8,7 @@ import cv2 as cv
 from picamera2 import Picamera2
 import torch
 from torchvision.transforms import v2
-from cnn_architectures.bear_net import BearNet
+from autopilot_architectures.Improved_Bear_Net import ImprovedBearNet
 
 
 # SETUP
