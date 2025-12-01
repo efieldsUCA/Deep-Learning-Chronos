@@ -21,6 +21,9 @@ class ImprovedBearNet(nn.Module):
         self.conv7 = nn.Conv2d(256, 256, kernel_size=3, padding=1)
         self.bn7 = nn.BatchNorm2d(256)
 
+        # ReLU activation
+        self.relu = nn.ReLU()
+
         # Max Pooling or Adaptive Pooling
         self.max_pool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
         self.adaptive_pool = nn.AdaptiveAvgPool2d((7, 7))  # Fixed size output
