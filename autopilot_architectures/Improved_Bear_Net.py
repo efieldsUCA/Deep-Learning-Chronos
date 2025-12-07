@@ -61,7 +61,6 @@ class ImprovedBearNet(nn.Module):
         
         return x
 
-
 if __name__ == "__main__":
     from torchinfo import summary
 
